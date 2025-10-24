@@ -1,4 +1,4 @@
-//class Hero {
+package characters//class Hero {
 //    var name: String = " Неизвестный"
 //    var gender: String = "Не указан"
 //    var role: String = "Бродяга"
@@ -144,4 +144,84 @@
 //    this.showStats()
 //    opponent.showStats()
 //}
+//}
+//class Hero(
+//    val name: String,
+//    val gender: String,
+//    val role: String,
+//    val level: Int,
+//    val element: String,
+//    var hp: Int,
+//    var mp: Int
+//) {
+//    fun sayHello() {
+//        println("Я – $name, мой путь только начинается!")
+//    }
+//    fun showStats() {
+//        println("=== Статистика героя ===")
+//        println("Имя: $name")
+//        println("Пол: $gender")
+//        println("Класс: $role")
+//        println("Уровень: $level")
+//        println("Стихия: $element")
+//        println("Здоровье: $hp")
+//        println("Мана: $mp")
+//        println()
+//    }
+//    fun meditate() {
+//        println("$name медитирует...")
+//        mp += 20
+//        println("Мана восстановлена! Текущая мана: $mp")
+//    }
+//    fun takeDamage(amount: Int) {
+//        println("$name получает $amount урона!")
+//        hp -= amount
+//        if (hp < 0) hp = 0
+//        println("Осталось здоровья: $hp")
+//        if (hp == 0) {
+//            die()
+//        }
+//    }
+//    fun die() {
+//        println("💀 Герой $name умер!")
+//    }
+//    fun isAlive(): Boolean {
+//        return hp > 0
+//    }
+//    fun greet(name: String) {
+//        println("Привет, $name!")
+//    }
+//    fun castSpell() {
+//        if (mp <= 0) {
+//            println("Недостаточно маны для применения заклинания!")
+//            return
+//        }
+//        mp -= 10
+//        if (mp < 0) mp = 0
+//        println("$name применяет магию! Осталось маны: $mp")
+//    }
+//    fun heal() {
+//        if (mp < 10) {
+//            println("Недостаточно маны! У вас только $mp")
+//            return
+//        }
+//        hp += 10
+//        mp -= 10
+//        println("Лечусь! Восстановлено здоровье, потрачено 10 маны.")
+//        println("Здоровье: $hp | Мана: $mp")
+//    }
+//    fun canAcceptQuest(quest: Quest): Boolean {
+//        val canAccept = when (quest.difficulty.lowercase()) {
+//            "лёгкий" -> level >= 1
+//            "средний" -> level >= 3
+//            "сложный" -> level >= 5
+//            else -> false
+//        }
+//        if (canAccept) {
+//            println("$name может принять квест «${quest.title}»!")
+//        } else {
+//            println("$name не может принять квест «${quest.title}». Требуется более высокий уровень.")
+//        }
+//        return canAccept
+//    }
 //}
